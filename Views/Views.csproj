@@ -93,6 +93,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -112,6 +113,51 @@
       <Project>{EF44698E-ABC1-4056-B111-83A8E9BCDD43}</Project>
       <Name>Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="imagenes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-window-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-maximize-button-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-maximize-window-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-minimize-window-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restore-window-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-x-coordinate-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consola-de-juego64px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consola-de-video24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consola-de-video64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\controlador-de-videojuegos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ledger-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ordenador-persona2l.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ordenador-personal.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
