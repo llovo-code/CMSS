@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MPCP_Software.Properties
+namespace Views.Properties
 {
 
 
