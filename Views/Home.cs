@@ -13,13 +13,16 @@ namespace Views
 {
     public partial class Home : Form
     {
-        addelements elements = new addelements();
+         ManteniminetoDao Mdao = new ManteniminetoDao();
         public Home()
         {
+
+            
+
             InitializeComponent();
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
 
-             dgv.DataSource = elements.populate(dgv);
+            dgv.DataSource = Mdao.MostarMantenimientos();
         }
 
         private void Form1_Load(object sender, EventArgs e)
