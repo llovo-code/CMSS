@@ -45,5 +45,10 @@ namespace Views
         {
 
         }
+
+        private void PCentral_Prin_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
