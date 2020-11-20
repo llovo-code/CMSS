@@ -27,33 +27,30 @@ namespace Views
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PTop_Principal = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.Btn_Maximizar_Prin = new Bunifu.Framework.UI.BunifuImageButton();
             this.Btn_Minimizar_Prin = new Bunifu.Framework.UI.BunifuImageButton();
             this.Btn_Restaurar_Prin = new Bunifu.Framework.UI.BunifuImageButton();
             this.Btn_Cerrar_Prin = new Bunifu.Framework.UI.BunifuImageButton();
             this.PCentral_Prin = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.bunifuDataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Btn_Presupuesto = new Bunifu.Framework.UI.BunifuThinButton2();
             this.DataGridView_Producto = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.Items = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Modelo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descripción = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TipoMante = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Btn_ManCorrectivo = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Btn_ManPredictivo = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Btn_ManPreventivo = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.CoBox_Marca = new Guna.UI.WinForms.GunaComboBox();
-            this.CoBox_Modelo = new Guna.UI.WinForms.GunaComboBox();
-            this.Lb_Marca = new Guna.UI.WinForms.GunaLabel();
-            this.Lb_Modelo = new Guna.UI.WinForms.GunaLabel();
             this.PLateral_Prin = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.Lb_PC = new Guna.UI.WinForms.GunaLabel();
             this.Lb_Mando = new Guna.UI.WinForms.GunaLabel();
@@ -62,25 +59,18 @@ namespace Views
             this.Btn_Mando_Menu = new Bunifu.Framework.UI.BunifuImageButton();
             this.Btn_Consola_Menu = new Bunifu.Framework.UI.BunifuImageButton();
             this.Mov_Principal = new Bunifu.UI.WinForms.BunifuFormDock();
-            this.bunifuDataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PTop_Principal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Maximizar_Prin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Minimizar_Prin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Restaurar_Prin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Cerrar_Prin)).BeginInit();
             this.PCentral_Prin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_Producto)).BeginInit();
             this.PLateral_Prin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_PC_Menu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Mando_Menu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Consola_Menu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // PTop_Principal
@@ -177,10 +167,6 @@ namespace Views
             this.PCentral_Prin.Controls.Add(this.Btn_ManCorrectivo);
             this.PCentral_Prin.Controls.Add(this.Btn_ManPredictivo);
             this.PCentral_Prin.Controls.Add(this.Btn_ManPreventivo);
-            this.PCentral_Prin.Controls.Add(this.CoBox_Marca);
-            this.PCentral_Prin.Controls.Add(this.CoBox_Modelo);
-            this.PCentral_Prin.Controls.Add(this.Lb_Marca);
-            this.PCentral_Prin.Controls.Add(this.Lb_Modelo);
             this.PCentral_Prin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PCentral_Prin.GradientBottomLeft = System.Drawing.Color.White;
             this.PCentral_Prin.GradientBottomRight = System.Drawing.Color.White;
@@ -193,6 +179,87 @@ namespace Views
             this.PCentral_Prin.Size = new System.Drawing.Size(709, 625);
             this.PCentral_Prin.TabIndex = 1;
             this.PCentral_Prin.Paint += new System.Windows.Forms.PaintEventHandler(this.PCentral_Prin_Paint);
+            // 
+            // bunifuDataGridView1
+            // 
+            this.bunifuDataGridView1.AllowCustomTheming = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(191)))), ((int)(((byte)(223)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.bunifuDataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.bunifuDataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.bunifuDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.bunifuDataGridView1.ColumnHeadersHeight = 40;
+            this.bunifuDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6});
+            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(191)))), ((int)(((byte)(223)))));
+            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(102)))), ((int)(((byte)(178)))));
+            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.CurrentTheme.BackColor = System.Drawing.Color.Purple;
+            this.bunifuDataGridView1.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(178)))), ((int)(((byte)(216)))));
+            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.Purple;
+            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.CurrentTheme.Name = null;
+            this.bunifuDataGridView1.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(204)))), ((int)(((byte)(229)))));
+            this.bunifuDataGridView1.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuDataGridView1.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(102)))), ((int)(((byte)(178)))));
+            this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(204)))), ((int)(((byte)(229)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(102)))), ((int)(((byte)(178)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bunifuDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.bunifuDataGridView1.EnableHeadersVisualStyles = false;
+            this.bunifuDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(178)))), ((int)(((byte)(216)))));
+            this.bunifuDataGridView1.HeaderBackColor = System.Drawing.Color.Purple;
+            this.bunifuDataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridView1.HeaderForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.Location = new System.Drawing.Point(73, 377);
+            this.bunifuDataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuDataGridView1.Name = "bunifuDataGridView1";
+            this.bunifuDataGridView1.RowHeadersVisible = false;
+            this.bunifuDataGridView1.RowTemplate.Height = 40;
+            this.bunifuDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.bunifuDataGridView1.Size = new System.Drawing.Size(579, 153);
+            this.bunifuDataGridView1.TabIndex = 102;
+            this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Purple;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Descripción";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.HeaderText = "Tipo de Mantenimiento";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.HeaderText = "Precio del Servicio";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
             // Btn_Presupuesto
             // 
@@ -244,9 +311,6 @@ namespace Views
             this.DataGridView_Producto.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.DataGridView_Producto.ColumnHeadersHeight = 40;
             this.DataGridView_Producto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Items,
-            this.Modelo,
-            this.Marca,
             this.Descripción,
             this.TipoMante,
             this.Precio});
@@ -279,30 +343,15 @@ namespace Views
             this.DataGridView_Producto.HeaderBackColor = System.Drawing.Color.Purple;
             this.DataGridView_Producto.HeaderBgColor = System.Drawing.Color.Empty;
             this.DataGridView_Producto.HeaderForeColor = System.Drawing.Color.White;
-            this.DataGridView_Producto.Location = new System.Drawing.Point(9, 313);
+            this.DataGridView_Producto.Location = new System.Drawing.Point(73, 181);
             this.DataGridView_Producto.Margin = new System.Windows.Forms.Padding(2);
             this.DataGridView_Producto.Name = "DataGridView_Producto";
             this.DataGridView_Producto.RowHeadersVisible = false;
             this.DataGridView_Producto.RowTemplate.Height = 40;
             this.DataGridView_Producto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridView_Producto.Size = new System.Drawing.Size(306, 222);
+            this.DataGridView_Producto.Size = new System.Drawing.Size(579, 151);
             this.DataGridView_Producto.TabIndex = 100;
             this.DataGridView_Producto.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Purple;
-            // 
-            // Items
-            // 
-            this.Items.HeaderText = "Items";
-            this.Items.Name = "Items";
-            // 
-            // Modelo
-            // 
-            this.Modelo.HeaderText = "Modelo";
-            this.Modelo.Name = "Modelo";
-            // 
-            // Marca
-            // 
-            this.Marca.HeaderText = "Marca";
-            this.Marca.Name = "Marca";
             // 
             // Descripción
             // 
@@ -338,12 +387,13 @@ namespace Views
             this.Btn_ManCorrectivo.IdleFillColor = System.Drawing.Color.White;
             this.Btn_ManCorrectivo.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(33)))), ((int)(((byte)(68)))));
             this.Btn_ManCorrectivo.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(33)))), ((int)(((byte)(68)))));
-            this.Btn_ManCorrectivo.Location = new System.Drawing.Point(497, 128);
+            this.Btn_ManCorrectivo.Location = new System.Drawing.Point(294, 72);
             this.Btn_ManCorrectivo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Btn_ManCorrectivo.Name = "Btn_ManCorrectivo";
             this.Btn_ManCorrectivo.Size = new System.Drawing.Size(170, 67);
             this.Btn_ManCorrectivo.TabIndex = 99;
             this.Btn_ManCorrectivo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Btn_ManCorrectivo.Click += new System.EventHandler(this.Btn_ManCorrectivo_Click);
             // 
             // Btn_ManPredictivo
             // 
@@ -364,12 +414,13 @@ namespace Views
             this.Btn_ManPredictivo.IdleFillColor = System.Drawing.Color.White;
             this.Btn_ManPredictivo.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(33)))), ((int)(((byte)(68)))));
             this.Btn_ManPredictivo.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(33)))), ((int)(((byte)(68)))));
-            this.Btn_ManPredictivo.Location = new System.Drawing.Point(497, 216);
+            this.Btn_ManPredictivo.Location = new System.Drawing.Point(497, 72);
             this.Btn_ManPredictivo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Btn_ManPredictivo.Name = "Btn_ManPredictivo";
             this.Btn_ManPredictivo.Size = new System.Drawing.Size(170, 67);
             this.Btn_ManPredictivo.TabIndex = 98;
             this.Btn_ManPredictivo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Btn_ManPredictivo.Click += new System.EventHandler(this.Btn_ManPredictivo_Click);
             // 
             // Btn_ManPreventivo
             // 
@@ -390,87 +441,13 @@ namespace Views
             this.Btn_ManPreventivo.IdleFillColor = System.Drawing.Color.White;
             this.Btn_ManPreventivo.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(33)))), ((int)(((byte)(68)))));
             this.Btn_ManPreventivo.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(33)))), ((int)(((byte)(68)))));
-            this.Btn_ManPreventivo.Location = new System.Drawing.Point(497, 41);
+            this.Btn_ManPreventivo.Location = new System.Drawing.Point(86, 72);
             this.Btn_ManPreventivo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Btn_ManPreventivo.Name = "Btn_ManPreventivo";
             this.Btn_ManPreventivo.Size = new System.Drawing.Size(170, 67);
             this.Btn_ManPreventivo.TabIndex = 97;
             this.Btn_ManPreventivo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CoBox_Marca
-            // 
-            this.CoBox_Marca.BackColor = System.Drawing.Color.Transparent;
-            this.CoBox_Marca.BaseColor = System.Drawing.Color.White;
-            this.CoBox_Marca.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(33)))), ((int)(((byte)(68)))));
-            this.CoBox_Marca.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.CoBox_Marca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CoBox_Marca.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(33)))), ((int)(((byte)(68)))));
-            this.CoBox_Marca.Font = new System.Drawing.Font("Lucida Bright", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CoBox_Marca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(33)))), ((int)(((byte)(68)))));
-            this.CoBox_Marca.FormattingEnabled = true;
-            this.CoBox_Marca.Items.AddRange(new object[] {
-            "Nintendo",
-            "Wii",
-            "Play Stacion",
-            "Xbox 360"});
-            this.CoBox_Marca.Location = new System.Drawing.Point(124, 84);
-            this.CoBox_Marca.Margin = new System.Windows.Forms.Padding(2);
-            this.CoBox_Marca.Name = "CoBox_Marca";
-            this.CoBox_Marca.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(33)))), ((int)(((byte)(68)))));
-            this.CoBox_Marca.OnHoverItemForeColor = System.Drawing.Color.Gainsboro;
-            this.CoBox_Marca.Radius = 9;
-            this.CoBox_Marca.Size = new System.Drawing.Size(191, 30);
-            this.CoBox_Marca.TabIndex = 95;
-            // 
-            // CoBox_Modelo
-            // 
-            this.CoBox_Modelo.BackColor = System.Drawing.Color.Transparent;
-            this.CoBox_Modelo.BaseColor = System.Drawing.Color.White;
-            this.CoBox_Modelo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(33)))), ((int)(((byte)(68)))));
-            this.CoBox_Modelo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.CoBox_Modelo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CoBox_Modelo.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(33)))), ((int)(((byte)(68)))));
-            this.CoBox_Modelo.Font = new System.Drawing.Font("Lucida Bright", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CoBox_Modelo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(33)))), ((int)(((byte)(68)))));
-            this.CoBox_Modelo.FormattingEnabled = true;
-            this.CoBox_Modelo.Items.AddRange(new object[] {
-            "JK",
-            "LK"});
-            this.CoBox_Modelo.Location = new System.Drawing.Point(124, 38);
-            this.CoBox_Modelo.Margin = new System.Windows.Forms.Padding(2);
-            this.CoBox_Modelo.Name = "CoBox_Modelo";
-            this.CoBox_Modelo.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(33)))), ((int)(((byte)(68)))));
-            this.CoBox_Modelo.OnHoverItemForeColor = System.Drawing.Color.Gainsboro;
-            this.CoBox_Modelo.Radius = 9;
-            this.CoBox_Modelo.Size = new System.Drawing.Size(191, 30);
-            this.CoBox_Modelo.TabIndex = 94;
-            // 
-            // Lb_Marca
-            // 
-            this.Lb_Marca.AutoSize = true;
-            this.Lb_Marca.BackColor = System.Drawing.Color.Transparent;
-            this.Lb_Marca.Font = new System.Drawing.Font("Lucida Bright", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lb_Marca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(33)))), ((int)(((byte)(68)))));
-            this.Lb_Marca.Location = new System.Drawing.Point(32, 86);
-            this.Lb_Marca.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Lb_Marca.Name = "Lb_Marca";
-            this.Lb_Marca.Size = new System.Drawing.Size(86, 22);
-            this.Lb_Marca.TabIndex = 93;
-            this.Lb_Marca.Text = "Marca : ";
-            // 
-            // Lb_Modelo
-            // 
-            this.Lb_Modelo.AutoSize = true;
-            this.Lb_Modelo.BackColor = System.Drawing.Color.Transparent;
-            this.Lb_Modelo.Font = new System.Drawing.Font("Lucida Bright", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lb_Modelo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(33)))), ((int)(((byte)(68)))));
-            this.Lb_Modelo.Location = new System.Drawing.Point(32, 41);
-            this.Lb_Modelo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Lb_Modelo.Name = "Lb_Modelo";
-            this.Lb_Modelo.Size = new System.Drawing.Size(100, 22);
-            this.Lb_Modelo.TabIndex = 92;
-            this.Lb_Modelo.Text = "Modelo : ";
-            this.Lb_Modelo.Click += new System.EventHandler(this.Lb_Modelo_Click);
+            this.Btn_ManPreventivo.Click += new System.EventHandler(this.Btn_ManPreventivo_Click);
             // 
             // PLateral_Prin
             // 
@@ -577,6 +554,7 @@ namespace Views
             this.Btn_Consola_Menu.TabIndex = 97;
             this.Btn_Consola_Menu.TabStop = false;
             this.Btn_Consola_Menu.Zoom = 10;
+            this.Btn_Consola_Menu.Click += new System.EventHandler(this.Btn_Consola_Menu_Click);
             // 
             // Mov_Principal
             // 
@@ -618,105 +596,6 @@ namespace Views
             this.Mov_Principal.TitleBarOptions.TitleBarControl = this.PTop_Principal;
             this.Mov_Principal.TitleBarOptions.UseBackColorOnDockingIndicators = false;
             // 
-            // bunifuDataGridView1
-            // 
-            this.bunifuDataGridView1.AllowCustomTheming = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(191)))), ((int)(((byte)(223)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bunifuDataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.bunifuDataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.bunifuDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuDataGridView1.ColumnHeadersHeight = 40;
-            this.bunifuDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(191)))), ((int)(((byte)(223)))));
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(102)))), ((int)(((byte)(178)))));
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.CurrentTheme.BackColor = System.Drawing.Color.Purple;
-            this.bunifuDataGridView1.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(178)))), ((int)(((byte)(216)))));
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.Purple;
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.CurrentTheme.Name = null;
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(204)))), ((int)(((byte)(229)))));
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(102)))), ((int)(((byte)(178)))));
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(204)))), ((int)(((byte)(229)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(102)))), ((int)(((byte)(178)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bunifuDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.bunifuDataGridView1.EnableHeadersVisualStyles = false;
-            this.bunifuDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(178)))), ((int)(((byte)(216)))));
-            this.bunifuDataGridView1.HeaderBackColor = System.Drawing.Color.Purple;
-            this.bunifuDataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
-            this.bunifuDataGridView1.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.Location = new System.Drawing.Point(386, 313);
-            this.bunifuDataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.bunifuDataGridView1.Name = "bunifuDataGridView1";
-            this.bunifuDataGridView1.RowHeadersVisible = false;
-            this.bunifuDataGridView1.RowTemplate.Height = 40;
-            this.bunifuDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuDataGridView1.Size = new System.Drawing.Size(306, 222);
-            this.bunifuDataGridView1.TabIndex = 102;
-            this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Purple;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Items";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Modelo";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Marca";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Descripción";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Tipo de Mantenimiento";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "Precio del Servicio";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -737,14 +616,13 @@ namespace Views
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Restaurar_Prin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Cerrar_Prin)).EndInit();
             this.PCentral_Prin.ResumeLayout(false);
-            this.PCentral_Prin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_Producto)).EndInit();
             this.PLateral_Prin.ResumeLayout(false);
             this.PLateral_Prin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_PC_Menu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Mando_Menu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Consola_Menu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -765,27 +643,17 @@ namespace Views
         private Guna.UI.WinForms.GunaLabel Lb_Mando;
         private Guna.UI.WinForms.GunaLabel Lb_Consola;
         private Bunifu.UI.WinForms.BunifuFormDock Mov_Principal;
-        private Guna.UI.WinForms.GunaComboBox CoBox_Modelo;
-        private Guna.UI.WinForms.GunaLabel Lb_Marca;
-        private Guna.UI.WinForms.GunaLabel Lb_Modelo;
-        private Guna.UI.WinForms.GunaComboBox CoBox_Marca;
         private BunifuThinButton2 Btn_ManPreventivo;
         private BunifuThinButton2 Btn_ManCorrectivo;
         private BunifuThinButton2 Btn_ManPredictivo;
         private Bunifu.UI.WinForms.BunifuDataGridView DataGridView_Producto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Items;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Modelo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Marca;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descripción;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TipoMante;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
         private BunifuThinButton2 Btn_Presupuesto;
         private Bunifu.UI.WinForms.BunifuDataGridView bunifuDataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Descripción;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TipoMante;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
     }
 }

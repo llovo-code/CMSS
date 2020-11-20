@@ -175,12 +175,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Domain\Domain.csproj">
-      <Project>{EF44698E-ABC1-4056-B111-83A8E9BCDD43}</Project>
-      <Name>Domain</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="imagenes\" />
   </ItemGroup>
   <ItemGroup>
@@ -224,6 +218,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ordenador-personal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dominio\Dominio.csproj">
+      <Project>{5936CE94-BE00-4ED9-AA4F-A7D5EF3F94B6}</Project>
+      <Name>Dominio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
