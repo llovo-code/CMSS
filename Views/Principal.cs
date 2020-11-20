@@ -23,6 +23,10 @@ namespace Views
             InitializeComponent();
             idequipo = 0;
             idmante = 0;
+            DataGridViewCheckBoxColumn chckc = new DataGridViewCheckBoxColumn();
+            chckc.HeaderText = "Select";
+            chckc.Name = "Selection";
+            DataGridView_Producto.Columns.Add(chckc);
         }
 
         private void Btn_Cerrar_Prin_Click_1(object sender, EventArgs e)
@@ -62,33 +66,102 @@ namespace Views
         private void Btn_Consola_Menu_Click(object sender, EventArgs e)
         {
             idequipo = 1;
+            if (DataGridView_Producto.Rows.Count > 1)
+            {
+                DataGridView_Producto.DataSource = null;
+                DataGridView_Producto.Rows.Clear();
+            }
         }
 
         private void Btn_ManPreventivo_Click(object sender, EventArgs e)
         {
-            idmante = 1;
-
-            DataGridView_Producto.DataSource = Mmodel.GetMantenimientos(idequipo, idmante);
-            DataGridView_Producto.AutoGenerateColumns = true;
-            DataGridView_Producto.AutoResizeColumns();
+            if (idequipo > 0)
+            {
+                idmante = 1;
+                //DataGridViewCheckBoxColumn chckc = new DataGridViewCheckBoxColumn();
+                //chckc.HeaderText = "Select";
+                //chckc.Name = "Selection";
+                //DataGridView_Producto.Columns.Add(chckc);
+                DataGridView_Producto.DataSource = Mmodel.GetMantenimientos(idequipo, idmante);
+                DataGridView_Producto.AutoGenerateColumns = true;
+                DataGridView_Producto.AutoResizeColumns();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un Equipo Primero");
+            }
         }
 
         private void Btn_ManCorrectivo_Click(object sender, EventArgs e)
         {
-            idmante = 2;
-
-            DataGridView_Producto.DataSource = Mmodel.GetMantenimientos(idequipo, idmante);
-            DataGridView_Producto.AutoGenerateColumns = true;
-            DataGridView_Producto.AutoResizeColumns();
+           if(idequipo > 0)
+            {
+                idmante = 2;
+                //DataGridViewCheckBoxColumn chckc = new DataGridViewCheckBoxColumn();
+                //chckc.HeaderText = "Select";
+                //chckc.Name = "Selection";
+                //DataGridView_Producto.Columns.Add(chckc);
+                DataGridView_Producto.DataSource = Mmodel.GetMantenimientos(idequipo, idmante);
+                DataGridView_Producto.AutoGenerateColumns = true;
+                DataGridView_Producto.AutoResizeColumns();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un Equipo Primero");
+            }
         }
 
         private void Btn_ManPredictivo_Click(object sender, EventArgs e)
         {
-            idmante = 3;
+            if (idequipo > 0)
+            {
+                idmante = 3;
+             
+                DataGridView_Producto.DataSource = Mmodel.GetMantenimientos(idequipo, idmante);
+                DataGridView_Producto.AutoGenerateColumns = true;
+                DataGridView_Producto.AutoResizeColumns();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un Equipo Primero");
+            }
+        }
 
-            DataGridView_Producto.DataSource = Mmodel.GetMantenimientos(idequipo, idmante);
-            DataGridView_Producto.AutoGenerateColumns = true;
-            DataGridView_Producto.AutoResizeColumns();
+        private void Btn_Mando_Menu_Click(object sender, EventArgs e)
+        {
+            idequipo = 2;
+            if (DataGridView_Producto.Rows.Count > 1)
+            {
+                DataGridView_Producto.DataSource = null;
+                DataGridView_Producto.Rows.Clear();
+            }
+        }
+
+        private void Btn_PC_Menu_Click(object sender, EventArgs e)
+        {
+            idequipo = 3;
+            if (DataGridView_Producto.Rows.Count > 1)
+            {
+                DataGridView_Producto.DataSource = null;
+                DataGridView_Producto.Rows.Clear();
+            }
+        }
+
+        private void Btn_Presupuesto_Click(object sender, EventArgs e)
+        {
+
+            double total = 0;
+
+            foreach (DataGridViewRow dgvr in DataGridView_Producto.Rows)
+            {
+                if (Convert.ToBoolean(dgvr.Cells[0].Value))
+                {
+                    total += Double.Parse(dgvr.Cells[2].Value.ToString());
+                 //   MessageBox.Show(""+dgvr.Cells[1].Value.ToString()+"    :v    "+ dgvr.Cells[2].Value.ToString());
+                }
+            }
+
+            MessageBox.Show("El presupuesto por mantenimiento es de " + total.ToString());
         }
     }
 }

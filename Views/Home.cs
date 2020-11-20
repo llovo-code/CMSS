@@ -1,4 +1,4 @@
-﻿using Domain;
+﻿//using Domain;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,11 +13,11 @@ namespace Views
 {
     public partial class Home : Form
     {
-<<<<<<< HEAD
+// HEAD
       //  addelements elements = new addelements();
-=======
-         ManteniminetoDao Mdao = new ManteniminetoDao();
->>>>>>> Dao1
+//=======
+     //    ManteniminetoDao Mdao = new ManteniminetoDao();
+// Dao1
         public Home()
         {
 
@@ -26,11 +26,11 @@ namespace Views
             InitializeComponent();
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
           //   dgv.DataSource = elements.populate(dgv);
-=======
-            dgv.DataSource = Mdao.MostarMantenimientos();
->>>>>>> Dao1
+//=======
+        //    dgv.DataSource = Mdao.MostarMantenimientos();
+//>>>>>>> Dao1
         }
 
         private void Form1_Load(object sender, EventArgs e)
